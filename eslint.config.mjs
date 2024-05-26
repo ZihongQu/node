@@ -191,12 +191,15 @@ export default [
           property: '__defineSetter__',
           message: '__defineSetter__ is deprecated.',
         },
+        {
+          property: 'webcrypto',
+          message: 'Use `globalThis.crypto`.',
+        },
       ],
       'no-restricted-syntax': [
         'error',
         ...noRestrictedSyntaxCommonAll,
         ...noRestrictedSyntaxCommonLib,
-        ...noRestrictedSyntaxCommonTest,
       ],
       'no-self-compare': 'error',
       'no-template-curly-in-string': 'error',
